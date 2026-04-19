@@ -11,8 +11,8 @@
     "vite": "^5.0.0"
   },
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",   // Remove 'npx' if it is here!
-  "preview": "vite preview"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   }
 }
