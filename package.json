@@ -1,5 +1,5 @@
 {
-  "name": "grammargen",
+  "name": "grammex",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -11,8 +11,8 @@
     "vite": "^5.0.0"
   },
   "scripts": {
-    "start": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  }
+  "start": "vite",
+  "build": "npx vite build",
+  "preview": "npx vite preview"
+}
 }
