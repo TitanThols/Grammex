@@ -111,3 +111,85 @@ body {
 
 .pda-badge { display: flex; align-items: center; gap: 8px; padding: 10px 14px; background: var(--accent-dim); border: 1px solid var(--accent-border); border-radius: 6px; font-size: 11px; color: var(--accent); font-family: var(--font-mono); }
 .badge-icon { font-size: 14px; }
+
+/* ─── Mobile ─────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  body {
+    height: 100dvh;
+    overflow: hidden;
+  }
+
+  .app-layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: 45vh 1fr;
+    height: 100dvh;
+  }
+
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    overflow-y: auto;
+    order: 2;
+    height: 55vh;
+  }
+
+  .canvas-area {
+    order: 1;
+    height: 45vh;
+  }
+
+  .control-panel {
+    padding: 18px 16px;
+    gap: 20px;
+  }
+
+  .panel-logo { font-size: 15px; }
+  .panel-sub { font-size: 10px; }
+
+  .preset-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6px;
+  }
+
+  .preset-btn {
+    padding: 10px 10px;
+  }
+
+  .preset-desc { display: none; }
+
+  .preset-name { font-size: 10px; }
+
+  .field-input {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  .rule-row { gap: 6px; }
+
+  .rule-from { width: 38px; }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stat-value { font-size: 14px; }
+
+  .canvas-overlay-label { font-size: 9px; bottom: 10px; }
+
+  .slider::-webkit-slider-thumb {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* ─── Very small phones (≤380px) ─────────────────────────── */
+@media (max-width: 380px) {
+  .preset-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .preset-desc { display: none; }
+
+  .control-panel { padding: 14px 12px; gap: 16px; }
+}
