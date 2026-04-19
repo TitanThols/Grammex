@@ -36,7 +36,7 @@ export default function ControlPanel({
   return (
     <div className="control-panel">
       <div className="panel-header">
-        <span className="panel-logo">GrammarGen</span>
+        <span className="panel-logo">Grammex</span>
         <span className="panel-sub">L-System Procedural Generator</span>
       </div>
 
